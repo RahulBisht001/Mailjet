@@ -17,13 +17,9 @@
 }
 
 body {
-	/* color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb)); */
+	/* background: linear-gradient(to right, #000305ff, #03091d, #060910); */
+	color: #fff;
+	background: #0e131cff !important;
 }
 
 @layer utilities {
