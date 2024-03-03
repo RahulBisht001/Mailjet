@@ -1,9 +1,9 @@
-import Image from "next/image";
+import Home from "../modules/home/Home";
 
-export default function Home() {
+export default function page() {
     return (
         <>
-            <h1 className="font-Lexend">MailerLite</h1>
+            <Home />
         </>
     );
 }
