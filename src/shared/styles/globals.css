@@ -27,3 +27,21 @@ body {
 		text-wrap: balance;
 	}
 }
+
+/* CSS for custom scrollbar */
+::-webkit-scrollbar {
+	width: 5px; /* width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+	background: #f1f1f1; /* color of the scrollbar track */
+}
+
+::-webkit-scrollbar-thumb {
+	background: #7857ffff; /* color of the scrollbar thumb */
+	/* roundness of the scrollbar thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: #6340ec; /* color of the scrollbar thumb on hover */
+}
