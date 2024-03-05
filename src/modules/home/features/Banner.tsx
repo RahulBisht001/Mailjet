@@ -2,8 +2,8 @@ import {Button} from "@nextui-org/react";
 
 const Banner = () => {
     return (
-        <section className="bg-[#0e131c] text-white font-Lexend mt-[-50px]">
-            <div className="mx-auto max-w-screen-xl px-2 py-32 lg:flex lg:items-center">
+        <section className="bg-[#0e131c] text-white font-Lexend">
+            <div className="mx-auto max-w-screen-xl px-2 py-14 lg:flex lg:items-center">
                 <div className="mx-auto max-w-3xl text-center">
                     <h1 className="bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 bg-clip-text text-4xl font-extrabold text-transparent sm:text-7xl mb-2">
                         Create Emails

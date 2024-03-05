@@ -18,6 +18,33 @@ export const navItems: NavItems[] = [
 
 export const partners: PartnersTypes[] = [
 	{
+		url: "/assets/CodingNinjas.svg",
+	},
+	{
+		url: "/assets/glassdoor.svg",
+	},
+	{
+		url: "/assets/Makemytrip.svg",
+	},
+	{
+		url: "/assets/Educative.svg",
+	},
+	{
+		url: "/assets/Meesho.svg",
+	},
+	{
+		url: "/assets/Swiggy.svg",
+	},
+	{
+		url: "/assets/coursera.svg",
+	},
+	{
+		url: "/assets/coindcx.svg",
+	},
+];
+
+export const partners2: PartnersTypes[] = [
+	{
 		url: "https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,onerror=redirect,format=auto,width=1080,quality=75/www/company-logos-cyber-ink-bg/CompanyLogosCyberInkBG/resume-worded.svg",
 	},
 	{
