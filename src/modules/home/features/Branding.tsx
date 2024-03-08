@@ -6,12 +6,12 @@ import {partners} from "@/app/configs/constants";
 const Branding = () => {
     return (
         <>
-            <div className="border-t border-b border-[#000] py-10 font-Poppins">
+            <div className="border-t border-b border-[#000] py-5 font-Poppins">
                 <h3 className="text-lg md:text-lg text-center max-w-3xl mx-auto font-[500] z-20 relative">
                     Created by RahulB
                 </h3>
 
-                <div className="w-full text-center pt-1">
+                <div className="w-ful m-3 text-center pt-1">
                     <h3 className="capitalize bg-[#f88be2] text-black rounded-lg p-2 text-md md:text-md text-center inline-block font-Lexend font-semibold z-20 relative">
                         now powering the World&apos;s top newsletters.
                     </h3>
@@ -24,7 +24,7 @@ const Branding = () => {
                             alt="our partners"
                             width={100}
                             height={100}
-                            className={`md:mx-8 w-[150px] md:w-[220px] h-full`}
+                            className={`md:mx-8 w-[150px] md:w-[220px] mx-5 h-full`}
                         />
                     ))}
                 </Marquee>

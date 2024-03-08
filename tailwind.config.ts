@@ -1,3 +1,4 @@
+import { Red_Hat_Display } from "next/font/google";
 import type { Config } from "tailwindcss";
 const { nextui } = require("@nextui-org/react");
 
@@ -12,6 +13,7 @@ const config: Config = {
 		fontFamily: {
 			Poppins: ["var(--font-Poppins)"],
 			Lexend: ["var(--font-Lexend)"],
+			RedHatDisplay: ["var(--font-RedHatDisplay)"],
 		},
 		extend: {
 			backgroundImage: {
