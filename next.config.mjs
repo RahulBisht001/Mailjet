@@ -5,7 +5,13 @@ const nextConfig = {
     images: {
         remotePatterns: [
             {
+                hostname: "media.beehiiv.com",
+            },
+            {
                 hostname: "img.clerk.com",
+            },
+            {
+                hostname: "images.ctfassets.net",
             },
         ],
     },
