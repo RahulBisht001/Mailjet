@@ -1,9 +1,9 @@
 import Header from "@/shared/widgets/header/Header";
-import Banner from "./features/Banner";
-import Branding from "./features/Branding";
-import Benefits from "./features/Benefits";
-import FeaturesHighlights from "./features/FeaturesHighlights";
-import Pricing from "./features/Pricing";
+import Banner from "./elements/Banner";
+import Branding from "./elements/Branding";
+import Benefits from "./elements/Benefits";
+import FeaturesHighlights from "./elements/FeaturesHighlights";
+import Pricing from "./elements/Pricing";
 import Footer from "@/shared/widgets/footer/Footer";
 
 const Home = () => {
