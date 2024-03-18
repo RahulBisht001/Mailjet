@@ -38,6 +38,24 @@ body {
 	background-repeat: no-repeat;
 	background-size: cover;
 }
+.cl-internal-b3fm6y {
+	display: none;
+}
+
+.cl-internal-17ydaof {
+	gap: 1rem;
+	padding: 1.5rem 2rem 1.5rem 2rem;
+}
+.cl-internal-b3fm6y {
+	background-color: #6340ec;
+}
+.cl-internal-1fsg6zy:hover {
+	background-color: #4b2cc6;
+}
+.cl-internal-1fsg6zy {
+	background-color: #6340ec;
+	font-weight: 400;
+}
 
 /* CSS for custom scrollbar */
 ::-webkit-scrollbar {

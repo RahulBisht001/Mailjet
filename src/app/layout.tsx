@@ -1,6 +1,8 @@
 import type {Metadata} from "next";
 import "../shared/styles/globals.css";
 
+import {ClerkProvider} from "@clerk/nextjs";
+
 import {Lexend, Lexend_Deca, Red_Hat_Display, Poppins} from "next/font/google";
 import Providers from "@/shared/utils/Provider";
 
@@ -33,10 +35,12 @@ export default function RootLayout({
     children: React.ReactNode;
 }>) {
     return (
-        <html lang="en" className="bg-[#0e131cff]">
-            <body className={`${lexend.variable} ${poppins.variable} ${redhat.variable}`}>
-                <Providers>{children}</Providers>
-            </body>
-        </html>
+        <ClerkProvider>
+            <html lang="en" className="bg-[#0e131cff]">
+                <body className={`${lexend.variable} ${poppins.variable} ${redhat.variable}`}>
+                    <Providers>{children}</Providers>
+                </body>
+            </html>
+        </ClerkProvider>
     );
 }
