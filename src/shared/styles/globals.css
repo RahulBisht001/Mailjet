@@ -59,7 +59,8 @@ body {
 
 /* CSS for custom scrollbar */
 ::-webkit-scrollbar {
-	width: 5px; /* width of the scrollbar */
+	width: 3px; /* width of the scrollbar */
+	border-radius: 20px;
 }
 
 ::-webkit-scrollbar-track {
@@ -67,10 +68,13 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-	background: #7857ffff; /* color of the scrollbar thumb */
+	background: #79eeaa;
+	border-radius: 20px;
+
+	/* color of the scrollbar thumb */
 	/* roundness of the scrollbar thumb */
 }
 
 ::-webkit-scrollbar-thumb:hover {
-	background: #6340ec; /* color of the scrollbar thumb on hover */
+	background: #79eeaa; /* color of the scrollbar thumb on hover */
 }

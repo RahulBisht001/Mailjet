@@ -1,5 +1,6 @@
 import {IoMdCheckmark} from "react-icons/io";
 import {TiHomeOutline} from "react-icons/ti";
+import {IoHome} from "react-icons/io5";
 import {MdOutlineDashboard} from "react-icons/md";
 import {GoPencil} from "react-icons/go";
 import {IoAnalyticsOutline} from "react-icons/io5";
@@ -21,7 +22,7 @@ import {IoIosRepeat} from "react-icons/io";
 
 export const ICONS = {
     right: <IoMdCheckmark />,
-    home: <TiHomeOutline />,
+    home: <IoHome />,
     dashboard: <MdOutlineDashboard />,
     write: <GoPencil />,
     analytics: <IoAnalyticsOutline />,
