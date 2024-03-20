@@ -32,13 +32,13 @@ const DashboardItems = ({bottomContent}: {bottomContent?: boolean}) => {
                             key={index}
                             href={item.url}
                             className={`p-2 py-3 flex items-center my-2 rounded-lg cursor-pointer ${
-                                item.url === activeRoute && "bg-green-200 shadow-lg"
+                                item.url === activeRoute && ""
                             }`}
                         >
-                            <span className={`text-xl mr-3 ${item.url === activeRoute && "text-[#323232]"}`}>
+                            <span className={`text-xl mr-3 ${item.url === activeRoute && "text-green-500"}`}>
                                 {item.icon}
                             </span>
-                            <span className={`text-sm mr-3 ${item.url === activeRoute && "text-[#323232]"}`}>
+                            <span className={`text-sm mr-3 ${item.url === activeRoute && "text-green-500"}`}>
                                 {item.title}
                             </span>
                         </Link>
@@ -50,14 +50,12 @@ const DashboardItems = ({bottomContent}: {bottomContent?: boolean}) => {
                         <Link
                             key={index}
                             href={item.url === "/" ? `/subscribe?username=${user?.username}` : item.url}
-                            className={`p-2 py-3 flex items-center my-2 rounded-lg ${
-                                item.url === activeRoute && "bg-violet-300"
-                            }`}
+                            className={`p-2 py-3 flex items-center my-2 rounded-lg ${item.url === activeRoute && ""}`}
                         >
-                            <span className={`text-xl mr-3 ${item.url === activeRoute && "text-[#323232]"}`}>
+                            <span className={`text-xl mr-3 ${item.url === activeRoute && "text-green-500"}`}>
                                 {item.icon}
                             </span>
-                            <span className={`text-sm mr-3 ${item.url === activeRoute && "text-[#323232]"}`}>
+                            <span className={`text-sm mr-3 ${item.url === activeRoute && "text-green-500"}`}>
                                 {item.title}
                             </span>
                         </Link>
@@ -65,10 +63,7 @@ const DashboardItems = ({bottomContent}: {bottomContent?: boolean}) => {
 
                     {/* Sign out */}
 
-                    <div
-                        className="p-3 cursor-pointer flex items-center border-b text-green-500"
-                        onClick={logoutHandler}
-                    >
+                    <div className="p-3 cursor-pointer flex items-center border-b" onClick={logoutHandler}>
                         <span className="text-xl mr-2">{ICONS.logOut}</span>
                         <span className="text-sm">Sign Out</span>
                     </div>

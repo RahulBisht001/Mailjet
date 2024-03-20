@@ -1,9 +1,9 @@
-import Dashboard from "@/modules/dashboard/Dashboard";
+import Write from "@/modules/dashboard/elements/write/Write";
 
 const Page = () => {
     return (
         <>
-            <Dashboard />
+            <Write />
         </>
     );
 };

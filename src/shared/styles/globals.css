@@ -18,8 +18,9 @@
 
 body {
 	/* background: linear-gradient(to right, #000305ff, #03091d, #060910); */
-	color: #fff;
-	background: #0e131cff !important;
+	/* color: #fff;
+	background: #0e131cff !important; */
+	color: black;
 }
 
 @layer utilities {

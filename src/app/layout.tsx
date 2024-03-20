@@ -36,7 +36,7 @@ export default function RootLayout({
 }>) {
     return (
         <ClerkProvider>
-            <html lang="en" className="bg-[#0e131cff]">
+            <html lang="en" className="">
                 <body className={`${lexend.variable} ${poppins.variable} ${redhat.variable}`}>
                     <Providers>{children}</Providers>
                 </body>
