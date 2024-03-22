@@ -4,7 +4,11 @@ import Link from "next/link";
 import {useSearchParams} from "next/navigation";
 
 import {ICONS} from "@/shared/utils/icons";
-import Emaileditor from "@/shared/components/editor/Emaileditor";
+
+import dynamic from "next/dynamic"; // Import dynamic for dynamic imports
+const Emaileditor = dynamic(() => import("@/shared/components/editor/Emaileditor"), {ssr: false}); // Ensure Emaileditor is not imported during SSR
+
+// import Emaileditor from "@/shared/components/editor/Emaileditor";
 
 const Page = () => {
     const searchParams = useSearchParams();
