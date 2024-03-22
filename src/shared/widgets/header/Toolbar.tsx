@@ -10,7 +10,7 @@ const Toolbar = () => {
 
     return (
         <>
-            <Button className="px-4 py-2 text-sm bg-[#7856ff] text-white rounded-lg h-fit">
+            <Button className="px-4 py-2 text-base bg-transparent text-green-500 rounded-lg h-fit">
                 &nbsp;Start Trial&nbsp;
             </Button>
             {user ? (
