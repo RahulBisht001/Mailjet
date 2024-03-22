@@ -10,7 +10,7 @@ const CheckListItem = ({msg}: {msg: string}) => {
                     viewBox="0 0 24 24"
                     strokeWidth="1.5"
                     stroke="currentColor"
-                    className="h-5 w-5 text-indigo-700"
+                    className="h-5 w-5 text-green-500"
                 >
                     <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
                 </svg>
@@ -45,17 +45,17 @@ const Pricing = () => {
         <>
             <div className="font-Lexend max-w-screen-xl px-6 py-8 lg:px-36 lg:py-16">
                 <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 sm:items-stretch md:grid-cols-3 md:gap-8">
-                    <div className="rounded-2xl border border-gray-200 shadow-sm lg:relative lg:top-8">
+                    <div className="rounded-2xl border border-green-500 shadow-xl lg:relative lg:top-8">
                         <div className="p-6 sm:px-8">
-                            <h2 className="text-lg font-medium text-[#4f47e6ff]">Starter</h2>
+                            <h2 className="text-lg font-medium text-green-500">Starter</h2>
 
                             <p className="mt-2 sm:mt-4">
-                                <strong className="text-3xl font-bold text-[#4f47e6ff] sm:text-4xl"> 20$ </strong>
-                                <span className="text-sm font-medium text-gray-500">/month</span>
+                                <strong className="text-3xl font-bold text-green-500 sm:text-4xl"> 20$ </strong>
+                                <span className="text-sm font-medium text-green-600">/month</span>
                             </p>
 
                             <a
-                                className="mt-4 block rounded-lg border border-indigo-600 bg-indigo-600 px-12 py-3 text-center text-sm font-medium text-white hover:bg-transparent hover:text-indigo-600 focus:outline-none focus:ring active:text-indigo-500 sm:mt-6"
+                                className="mt-4 block rounded-lg border border-green-500 bg-green-500 px-12 py-3 text-center text-sm font-medium text-white hover:bg-transparent hover:text-green-500 focus:outline-none focus:ring active:text-green-500 sm:mt-6"
                                 href="#"
                             >
                                 Get Started
@@ -63,7 +63,7 @@ const Pricing = () => {
                         </div>
 
                         <div className="p-6 sm:px-8">
-                            <p className="text-lg font-medium text-[#4f47e6ff] sm:text-xl">What included:</p>
+                            <p className="text-lg font-medium text-green-500 sm:text-xl">What included:</p>
 
                             <ul className="mt-2 space-y-2 sm:mt-4">
                                 <CheckListItem msg={"Up to 2,500 subscribers"} />
@@ -74,17 +74,17 @@ const Pricing = () => {
                         </div>
                     </div>
 
-                    <div className="rounded-2xl border border-gray-200 shadow-sm">
+                    <div className="rounded-2xl border border-green-500 shadow-xl">
                         <div className="p-6 sm:px-8">
-                            <h2 className="text-lg font-medium text-[#4f47e6ff]">Premium</h2>
+                            <h2 className="text-lg font-medium text-green-500">Premium</h2>
 
                             <p className="mt-2 sm:mt-4">
-                                <strong className="text-3xl font-bold text-[#4f47e6ff] sm:text-4xl"> 30$ </strong>
-                                <span className="text-sm font-medium text-gray-500">/month</span>
+                                <strong className="text-3xl font-bold text-green-500 sm:text-4xl"> 30$ </strong>
+                                <span className="text-sm font-medium text-green-600">/month</span>
                             </p>
 
                             <a
-                                className="mt-4 block rounded-lg border border-indigo-600 bg-indigo-600 px-12 py-3 text-center text-sm font-medium text-white hover:bg-transparent hover:text-indigo-600 focus:outline-none focus:ring active:text-indigo-500 sm:mt-6"
+                                className="mt-4 block rounded-lg border border-green-500 bg-green-500 px-12 py-3 text-center text-sm font-medium text-white hover:bg-transparent hover:text-green-500 focus:outline-none focus:ring active:text-green-500 sm:mt-6"
                                 href="#"
                             >
                                 Get Started
@@ -92,8 +92,8 @@ const Pricing = () => {
                         </div>
 
                         <div className="p-6 pt-0 sm:px-8">
-                            <p className="text-lg font-medium text-[#4f47e6ff] sm:text-xl">What included:</p>
-                            <p className="text-sm text-[#4f47e6ff] sm:text-md mt-5">Everything in Free </p>
+                            <p className="text-lg font-medium text-green-500 sm:text-xl">What included:</p>
+                            <p className="text-sm text-green-500 sm:text-md mt-5">Everything in Free </p>
 
                             <ul className="mt-2 space-y-2 sm:mt-4">
                                 <CheckListItem msg={"Up to 10,000 subscribers"} />
@@ -104,18 +104,18 @@ const Pricing = () => {
                         </div>
                     </div>
 
-                    <div className="rounded-2xl border border-gray-200 shadow-sm lg:relative lg:top-8">
+                    <div className="rounded-2xl border border-green-500 shadow-xl lg:relative lg:top-8">
                         <div className="p-6 sm:px-8">
-                            <h2 className="text-lg font-medium text-[#4f47e6ff]">Enterprise</h2>
+                            <h2 className="text-lg font-medium text-green-500">Enterprise</h2>
 
                             <p className="mt-2 sm:mt-4">
-                                <strong className="text-3xl font-bold text-[#4f47e6ff] sm:text-4xl"> 100$ </strong>
+                                <strong className="text-3xl font-bold text-green-500 sm:text-4xl"> 100$ </strong>
 
-                                <span className="text-sm font-medium text-gray-500">/month</span>
+                                <span className="text-sm font-medium text-green-600">/month</span>
                             </p>
 
                             <a
-                                className="mt-4 block rounded-lg border border-indigo-600 bg-indigo-600 px-12 py-3 text-center text-sm font-medium text-white hover:bg-transparent hover:text-indigo-600 focus:outline-none focus:ring active:text-indigo-500 sm:mt-6"
+                                className="mt-4 block rounded-lg border border-green-500 bg-green-500 px-12 py-3 text-center text-sm font-medium text-white hover:bg-transparent hover:text-green-500 focus:outline-none focus:ring active:text-green-500 sm:mt-6"
                                 href="#"
                             >
                                 Get Started
@@ -123,9 +123,9 @@ const Pricing = () => {
                         </div>
 
                         <div className="p-6 pt-0 sm:px-8">
-                            <p className="text-lg font-medium text-[#4f47e6ff] sm:text-xl">What included:</p>
+                            <p className="text-lg font-medium text-green-500 sm:text-xl">What included:</p>
 
-                            <p className="text-sm text-[#4f47e6ff] sm:text-md mt-5">Everything in Free and Pro</p>
+                            <p className="text-sm text-green-500 sm:text-md mt-5">Everything in Free and Pro</p>
 
                             <ul className="mt-2 space-y-2 sm:mt-4">
                                 <CheckListItem msg={"Up to 100,000 subscribers"} />

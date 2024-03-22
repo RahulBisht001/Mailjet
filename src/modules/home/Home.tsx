@@ -13,7 +13,7 @@ const Home = () => {
             <Banner />
             <Branding />
             <Benefits />
-            <FeaturesHighlights />
+            {/* <FeaturesHighlights /> */}
             <Pricing />
             <Footer />
         </>

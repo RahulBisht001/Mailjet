@@ -5,13 +5,19 @@ import React from "react";
 const Footer = () => {
     return (
         <>
-            <footer className="w-full font-Lexend bg-inherit text-white pt-10 mt-32">
+            <footer className="w-full font-Lexend bg-gray-100 pt-10 mt-32">
                 <div className="w-[95%] md:flex m-auto py-5">
                     <div className="w-full md:w-[40%]">
                         <Link href={"/"}>
-                            <Image src={"/Mailjet-red.svg"} alt="logo" width={130} height={130} />
+                            <div className="inline-flex items-center">
+                                <Image src={"/SendGrid.svg"} alt="logo" width={40} height={40} />
+                                <div className="inline-flex">
+                                    <h1 className="text-xl text-green-400 font-Overpass font-semibold">inbox</h1>
+                                    <h1 className="text-xl text-green-500 font-Overpass font-semibold">IQ</h1>
+                                </div>
+                            </div>
                         </Link>
-                        <p className="text-md sm:text-lg">Get Mailjet updates delivered directly to your inbox</p>
+                        <p className="text-xs sm:text-sm">Get inboxIQ updates delivered directly to your inbox</p>
                         <br />
                         <div className="flex items-center w-full">
                             <input
@@ -19,9 +25,9 @@ const Footer = () => {
                                 name=""
                                 id=""
                                 placeholder="Enter your email"
-                                className="bg-transparent w-full md:w-[50%] border h-[50px] px-2 rounded rounded-r-[0] outline-none"
+                                className="bg-transparent w-full md:w-[45%] border h-[40px] px-2 rounded-l-lg outline-none"
                             />
-                            <button className="w-[90px] cursor-pointer rounded-r h-[51px] bg-blue-500 text-md outline-none">
+                            <button className="w-[90px] cursor-pointer rounded-r-lg h-[41px] bg-green-500 text-md outline-none">
                                 submit
                             </button>
                         </div>
@@ -35,27 +41,27 @@ const Footer = () => {
                         <div className="w-full md:w-[50%] flex justify-around">
                             <div>
                                 <ul>
-                                    <li className="text-md pb-4 cursor-pointer">Create</li>
-                                    <li className="text-md pb-4 cursor-pointer">Write</li>
-                                    <li className="text-md pb-4 cursor-pointer">Grow</li>
-                                    <li className="text-md pb-4 cursor-pointer">Monetize</li>
-                                    <li className="text-md pb-4 cursor-pointer">Analyze</li>
+                                    <li className="text-md pb-4 cursor-pointer hover:text-green-500">Create</li>
+                                    <li className="text-md pb-4 cursor-pointer hover:text-green-500">Write</li>
+                                    <li className="text-md pb-4 cursor-pointer hover:text-green-500">Grow</li>
+                                    <li className="text-md pb-4 cursor-pointer hover:text-green-500">Monetize</li>
+                                    <li className="text-md pb-4 cursor-pointer hover:text-green-500">Analyze</li>
                                 </ul>
                             </div>
 
                             <div>
                                 <ul>
-                                    <li className="text-md pb-4 cursor-pointer">Carrers</li>
-                                    <li className="text-md pb-4 cursor-pointer">Pricing</li>
-                                    <li className="text-md pb-4 cursor-pointer">Shop</li>
-                                    <li className="text-md pb-4 cursor-pointer">Compare</li>
-                                    <li className="text-md pb-4 cursor-pointer">Love</li>
+                                    <li className="text-md pb-4 cursor-pointer hover:text-green-500">Careers</li>
+                                    <li className="text-md pb-4 cursor-pointer hover:text-green-500">Pricing</li>
+                                    <li className="text-md pb-4 cursor-pointer hover:text-green-500">Shop</li>
+                                    <li className="text-md pb-4 cursor-pointer hover:text-green-500">Compare</li>
+                                    <li className="text-md pb-4 cursor-pointer hover:text-green-500">Love</li>
                                 </ul>
                             </div>
                         </div>
                     </div>
                 </div>
-                <p className="text-md text-center pb-10">© 2024 Mailjet, Inc. All rights reserved.</p>
+                <p className="text-md text-center pb-10">© 2024 inboxIQ, Inc. All rights reserved.</p>
             </footer>
         </>
     );
