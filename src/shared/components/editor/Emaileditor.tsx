@@ -54,7 +54,7 @@ const Emaileditor = ({subjectTitle}: {subjectTitle: string}) => {
                 content: JSON.stringify(design),
                 newsLetterOwnerId: user?.id!,
             }).then((res: any) => {
-                toast.success(res.message);
+                toast.success("Email draft saved successfully");
                 history.push("/dashboard/write");
             });
         });
