@@ -31,7 +31,7 @@ const redhat = Red_Hat_Display({
 });
 
 export const metadata: Metadata = {
-    title: "Mailjet : Your Email Newsletter Platform",
+    title: "inboxIQ : Your go to email newsletter platform",
     description: "One stop solution for all your email marketing requirements",
 };
 
