@@ -23,6 +23,7 @@ export const saveEmail = async ({
 			await Email.findByIdAndUpdate(email._id, {
 				content,
 			});
+
 			return { message: "Email updated successfully!" };
 		} else {
 			await Email.create({
@@ -30,6 +31,7 @@ export const saveEmail = async ({
 				content,
 				newsLetterOwnerId,
 			});
+
 			return { message: "Email saved successfully!" };
 		}
 	} catch (error) {

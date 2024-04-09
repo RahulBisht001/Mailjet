@@ -7,9 +7,10 @@ import {useRouter} from "next/navigation";
 import {Button} from "@nextui-org/react";
 import {saveEmail} from "@/actions/save.email";
 import toast from "react-hot-toast";
+import {getEmailDetails} from "@/actions/get.email-details";
 
 const Emaileditor = ({subjectTitle}: {subjectTitle: string}) => {
-    const [loading, setLoading] = useState(false);
+    const [loading, setLoading] = useState(true);
     const [jsonData, setJsonData] = useState<any | null>(DefaultJsonData);
 
     const {user} = useClerk();
@@ -32,6 +33,10 @@ const Emaileditor = ({subjectTitle}: {subjectTitle: string}) => {
             // });
         });
     };
+
+    useEffect(() => {
+        getEmailDetailsHandler();
+    }, [user]);
 
     const onReady: EmailEditorProps["onReady"] = () => {
         // editor is ready
@@ -58,6 +63,26 @@ const Emaileditor = ({subjectTitle}: {subjectTitle: string}) => {
                 history.push("/dashboard/write");
             });
         });
+    };
+
+    const getEmailDetailsHandler = async () => {
+        try {
+            await getEmailDetails({
+                title: subjectTitle,
+                newsLetterOwnerId: user?.id!,
+            })
+            .then((res: any) => {
+                if (res) {
+                    setJsonData(JSON.parse(res?.content));
+                }
+                setLoading(false);
+            })
+            .catch((error) => {
+                console.log(error);
+            });
+        } catch (error) {
+            console.log(error);
+        }
     };
 
     return (

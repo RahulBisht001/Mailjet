@@ -3,7 +3,7 @@ import "../shared/styles/globals.css";
 
 import {ClerkProvider} from "@clerk/nextjs";
 
-import {Lexend, Lexend_Deca, Red_Hat_Display, Poppins, Overpass} from "next/font/google";
+import {Lexend_Deca, Red_Hat_Display, Poppins, Overpass, Outfit} from "next/font/google";
 import Providers from "@/shared/utils/Provider";
 
 const lexend = Lexend_Deca({
@@ -16,6 +16,12 @@ const overpass = Overpass({
     subsets: ["latin"],
     weight: ["400", "500", "600", "700"],
     variable: "--font-Overpass",
+});
+
+const outfit = Outfit({
+    subsets: ["latin"],
+    weight: ["400", "500", "600", "700"],
+    variable: "--font-Outfit",
 });
 
 const poppins = Poppins({
@@ -43,7 +49,9 @@ export default function RootLayout({
     return (
         <ClerkProvider>
             <html lang="en" className="">
-                <body className={`${lexend.variable} ${poppins.variable} ${redhat.variable} ${overpass.variable}`}>
+                <body
+                    className={`${lexend.variable} ${outfit.variable} ${poppins.variable} ${redhat.variable} ${overpass.variable}`}
+                >
                     <Providers>{children}</Providers>
                 </body>
             </html>

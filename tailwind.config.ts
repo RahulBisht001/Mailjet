@@ -13,6 +13,7 @@ const config: Config = {
 		fontFamily: {
 			Poppins: ["var(--font-Poppins)"],
 			Lexend: ["var(--font-Lexend)"],
+			Outfit: ["var(--font-Outfit)"],
 			Overpass: ["var(--font-Overpass)"],
 			RedHatDisplay: ["var(--font-RedHatDisplay)"],
 		},

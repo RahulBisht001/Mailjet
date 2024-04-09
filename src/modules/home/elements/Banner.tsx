@@ -2,17 +2,15 @@ import {Button} from "@nextui-org/react";
 
 const Banner = () => {
     return (
-        <section className="bg-[#f7f9fa] text-black font-Lexend">
+        <section className="bg-[#f7f9fa] text-black font-Outfit">
             <div className="mx-auto max-w-screen-xl px-2 py-14 lg:flex lg:items-center">
-                <div className="mx-auto max-w-3xl text-center">
+                <div className="mx-auto max-w-5xl text-center">
                     <div className="inline-flex gap-1">
-                        <h1 className="text-4xl font-extrabold sm:text-7xl mb-2">Create </h1>
-                        <h1 className="text-4xl font-extrabold sm:text-7xl mb-2 text-green-500"> Emails</h1>
+                        <h1 className="text-4xl font-bold sm:text-8xl mb-2">Create </h1>
+                        <h1 className="text-4xl font-bold sm:text-8xl mb-2 text-green-500"> Emails</h1>
                     </div>
 
-                    <span className="font-extrabold sm:block font-Lexend text-3xl sm:text-6xl">
-                        That Your Audience💖
-                    </span>
+                    <span className="font-[900] sm:block font-Outfit text-5xl sm:text-8xl">That Your Audience💖</span>
 
                     <p className="mx-auto mt-4 px-5 text-lg text-green-500">
                         Digital marketing tools to grow your audience faster and drive revenue smarter.
