@@ -1,6 +1,6 @@
 "use client";
 
-import {addSubscriber} from "@/actions/add.subscribe.";
+import {addSubscriber} from "@/actions/add.subscribe";
 import {useSearchParams} from "next/navigation";
 import {useState, FormEvent} from "react";
 import toast from "react-hot-toast";
