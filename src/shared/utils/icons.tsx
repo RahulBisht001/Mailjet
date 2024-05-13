@@ -1,5 +1,4 @@
 import {IoMdCheckmark} from "react-icons/io";
-import {TiHomeOutline} from "react-icons/ti";
 import {IoHome} from "react-icons/io5";
 import {MdOutlineDashboard} from "react-icons/md";
 import {GoPencil} from "react-icons/go";
@@ -19,6 +18,7 @@ import {CgProfile} from "react-icons/cg";
 import {FiPlusCircle} from "react-icons/fi";
 import {MdDeleteOutline} from "react-icons/md";
 import {IoIosRepeat} from "react-icons/io";
+import {IoMdArrowDown} from "react-icons/io";
 
 export const ICONS = {
     right: <IoMdCheckmark />,
@@ -32,6 +32,7 @@ export const ICONS = {
     world: <BiWorld />,
     logOut: <CgLogOut />,
     topArrow: <IoMdArrowUp />,
+    downArrow: <IoMdArrowDown />,
     copy: <FaLink />,
     link: <RiExternalLinkLine />,
     backArrow: <IoIosArrowBack />,

@@ -3,6 +3,9 @@
 import {useEffect, useState} from "react";
 import {LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer} from "recharts";
 import {subscribersData} from "../../../app/configs/constants";
+import {subscribersAnalytics} from "@/actions/subscribers.analytics";
+import Loader from "@/shared/utils/Loader";
+import useSubscribersAnalytics from "@/shared/hooks/useSubscribersAnalytics";
 
 interface subscribersAnalyticsData {
     month: number;
@@ -10,38 +13,49 @@ interface subscribersAnalyticsData {
 }
 
 const SubscribersChart = () => {
-    const [subscribersData, setSubscriberData] = useState<any>([]);
+    const {subscribersData, loading} = useSubscribersAnalytics();
 
-    const data = [
-        {
-            month: "Jan 2024",
-            count: 2400,
-        },
-        {
-            month: "Feb 2024",
-            count: 1398,
-        },
-        {
-            month: "March 2024",
-            count: 9800,
-        },
-        {
-            month: "April 2024",
-            count: 3908,
-        },
-        {
-            month: "May 2024",
-            count: 4800,
-        },
-        {
-            month: "Jun 2024",
-            count: 3800,
-        },
-        {
-            month: "July 2024",
-            count: 4300,
-        },
-    ];
+    // console.log(subscribersData);
+    const data: subscribersAnalyticsData[] = [];
+
+    subscribersData &&
+        subscribersData?.last7Months?.forEach((item: subscribersAnalyticsData) => {
+            data.push({
+                month: item?.month,
+                count: item?.count,
+            });
+        });
+
+    // const data = [
+    //     {
+    //         month: "Jan 2024",
+    //         count: 2400,
+    //     },
+    //     {
+    //         month: "Feb 2024",
+    //         count: 1398,
+    //     },
+    //     {
+    //         month: "March 2024",
+    //         count: 9800,
+    //     },
+    //     {
+    //         month: "April 2024",
+    //         count: 3908,
+    //     },
+    //     {
+    //         month: "May 2024",
+    //         count: 4800,
+    //     },
+    //     {
+    //         month: "Jun 2024",
+    //         count: 3800,
+    //     },
+    //     {
+    //         month: "July 2024",
+    //         count: 4300,
+    //     },
+    // ];
 
     return (
         <>
@@ -61,27 +75,35 @@ const SubscribersChart = () => {
                         <h5>Loading...</h5>
                     </div>
                 ) : ( */}
-                <ResponsiveContainer width="100%" height={"85%"} className={"mt-5 text-xs"}>
-                    <LineChart
-                        width={500}
-                        height={200}
-                        data={data}
-                        syncId="anyId"
-                        margin={{
-                            top: 10,
-                            right: 30,
-                            left: 0,
-                            bottom: 0,
-                        }}
-                    >
-                        <CartesianGrid strokeDasharray="3 3" />
-                        <XAxis dataKey="month" />
-                        <YAxis />
-                        <Tooltip />
-                        <Line type="monotone" dataKey="count" stroke="#00c75e" fill="#00c75e" />
-                    </LineChart>
-                </ResponsiveContainer>
-                {/* )} */}
+                {loading ? (
+                    <>
+                        {/* <div>
+                            <h5>Loading ...</h5>
+                        </div> */}
+                        <Loader />
+                    </>
+                ) : (
+                    <ResponsiveContainer width="100%" height={"85%"} className={"mt-5 text-xs"}>
+                        <LineChart
+                            width={500}
+                            height={200}
+                            data={data}
+                            syncId="anyId"
+                            margin={{
+                                top: 10,
+                                right: 30,
+                                left: 0,
+                                bottom: 0,
+                            }}
+                        >
+                            <CartesianGrid strokeDasharray="3 3" />
+                            <XAxis dataKey="month" />
+                            <YAxis />
+                            <Tooltip />
+                            <Line type="monotone" dataKey="count" stroke="#00c75e" fill="#00c75e" />
+                        </LineChart>
+                    </ResponsiveContainer>
+                )}
             </div>
         </>
     );

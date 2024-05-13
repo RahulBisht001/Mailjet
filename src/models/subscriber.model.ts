@@ -10,6 +10,15 @@ const subscriberSchema = new Schema(
 			type: String,
 			required: true,
 		},
+		source: {
+			type: String,
+			required: true,
+			default: "inboxIQbyrahul.com",
+		},
+		status: {
+			type: String,
+			default: "Subscribed",
+		},
 	},
 	{ timestamps: true }
 );
