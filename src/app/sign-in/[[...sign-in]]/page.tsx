@@ -6,7 +6,7 @@ export default function Page() {
     return (
         <>
             <div className="w-full flex h-screen items-center justify-center font-Lexend">
-                <SignIn signUpUrl="/sign-up" />
+                <SignIn path="/sign-in" routing="path" signUpUrl="/sign-up" />
             </div>
         </>
     );
