@@ -5,7 +5,7 @@ import React from "react";
 const Footer = () => {
     return (
         <>
-            <footer className="w-full font-Lexend bg-gray-100 pt-10 mt-32">
+            <footer className="w-full font-Lexend bg-black text-white pt-10 mt-32">
                 <div className="w-[95%] md:flex m-auto py-5">
                     <div className="w-full md:w-[40%]">
                         <Link href={"/"}>

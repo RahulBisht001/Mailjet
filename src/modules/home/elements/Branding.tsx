@@ -6,7 +6,7 @@ import {partners} from "@/app/configs/constants";
 const Branding = () => {
     return (
         <>
-            <div className="font-Overpass">
+            <div className="font-Overpass bg-black text-white">
                 <h3 className="text-lg md:text-lg text-center max-w-3xl mx-auto font-[800] z-20 relative">
                     Created by RahulB
                 </h3>
@@ -16,7 +16,7 @@ const Branding = () => {
                         now powering the World&apos;s top newsletters
                     </h3>
                 </div>
-                <Marquee className="w-full flex my-2" speed={200}>
+                <Marquee className="w-full flex" speed={200}>
                     {partners.map((item: PartnersTypes, index: number) => (
                         <Image
                             key={index}

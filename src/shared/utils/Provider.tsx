@@ -21,7 +21,7 @@ export default function Providers({children}: ProviderProps) {
     }
 
     return (
-        <NextUIProvider className="font-Lexend text-sm">
+        <NextUIProvider className="font-Lexend text-sm bg-black">
             {pathname !== "/dashboard/new-email" &&
             pathname !== "/" &&
             pathname !== "/sign-up" &&

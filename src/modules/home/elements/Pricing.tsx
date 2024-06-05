@@ -43,7 +43,7 @@ const CrossListItem = ({msg}: {msg: string}) => {
 const Pricing = () => {
     return (
         <>
-            <div className="font-Lexend max-w-screen-xl px-6 py-8 lg:px-36 lg:py-16">
+            <div className="font-Lexend max-w-screen-xl px-6 py-8 lg:px-36 lg:py-16 bg-black text-white">
                 <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 sm:items-stretch md:grid-cols-3 md:gap-8">
                     <div className="rounded-2xl border border-green-500 shadow-xl lg:relative lg:top-8">
                         <div className="p-6 sm:px-8">

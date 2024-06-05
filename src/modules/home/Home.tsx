@@ -5,6 +5,9 @@ import Benefits from "./elements/Benefits";
 import FeaturesHighlights from "./elements/FeaturesHighlights";
 import Pricing from "./elements/Pricing";
 import Footer from "@/shared/widgets/footer/Footer";
+import Developer from "./elements/Developer";
+import {LampText} from "./elements/LampText";
+import {HeroHighlightDemo} from "./elements/HeroHighlight";
 
 const Home = () => {
     return (
@@ -12,7 +15,10 @@ const Home = () => {
             <Header />
             <Banner />
             <Branding />
-            <Benefits />
+            {/* <Developer /> */}
+            <LampText />
+            <HeroHighlightDemo />
+            {/* <Benefits /> */}
             {/* <FeaturesHighlights /> */}
             <Pricing />
             <Footer />

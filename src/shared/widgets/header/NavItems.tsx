@@ -11,7 +11,7 @@ const NavItems = () => {
                         <Link
                             key={index}
                             href={""}
-                            className="px-3 py-[6px] text-base font-[400] text-gray-600 hover:text-green-500"
+                            className="px-3 py-[6px] text-base font-[400] text-white hover:text-green-500"
                         >
                             {item.title}
                         </Link>
