@@ -1,3 +1,4 @@
+import {useEffect} from "react";
 import {useClerk} from "@clerk/nextjs";
 import {redirect, usePathname} from "next/navigation";
 
@@ -6,7 +7,6 @@ import {sideBarBottomItems, sideBarItems} from "@/app/configs/constants";
 import Link from "next/link";
 import {ICONS} from "@/shared/utils/icons";
 import SidebarFotterLogo from "./SidebarFotterLogo";
-import {useEffect} from "react";
 
 const DashboardItems = ({bottomContent}: {bottomContent?: boolean}) => {
     const {activeRoute, setActiveRoute} = useRouteChange();
@@ -35,12 +35,28 @@ const DashboardItems = ({bottomContent}: {bottomContent?: boolean}) => {
                                 item.url === activeRoute && ""
                             }`}
                         >
-                            <span className={`text-xl mr-3 ${item.url === activeRoute && "text-green-500"}`}>
-                                {item.icon}
-                            </span>
-                            <span className={`text-sm mr-3 ${item.url === activeRoute && "text-green-500"}`}>
-                                {item.title}
-                            </span>
+                            {item.title === "inbox.ai" ? (
+                                <>
+                                    <span className={`text-xl mr-3 ${item.url === activeRoute && "text-green-500"}`}>
+                                        {item.icon}
+                                    </span>
+                                    <span className={`text-sm mr-3 ${item.url === activeRoute && "text-green-500"}`}>
+                                        {item.title}
+                                    </span>
+                                    <span className="text-xs text-black bg-[#36fa7e49] rounded-xl relative bottom-4 px-2 py-1">
+                                        try now
+                                    </span>
+                                </>
+                            ) : (
+                                <>
+                                    <span className={`text-xl mr-3 ${item.url === activeRoute && "text-green-500"}`}>
+                                        {item.icon}
+                                    </span>
+                                    <span className={`text-sm mr-3 ${item.url === activeRoute && "text-green-500"}`}>
+                                        {item.title}
+                                    </span>
+                                </>
+                            )}
                         </Link>
                     ))}
                 </>

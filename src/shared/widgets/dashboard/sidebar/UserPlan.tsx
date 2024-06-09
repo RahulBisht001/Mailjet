@@ -1,6 +1,6 @@
 // import {manageSubscription} from "@/actions/manage.subscription";
 // import useGetMembership from "@/shared/hooks/useGetMembership";
-// import useSubscribersData from "@/shared/hooks/useSubscribersData";
+import useSubscribersData from "@/shared/hooks/useSubscribersData";
 
 import {useRouter} from "next/navigation";
 import {Slider} from "@nextui-org/slider";
@@ -8,7 +8,7 @@ import {Slider} from "@nextui-org/slider";
 import {ICONS} from "@/shared/utils/icons";
 
 const UserPlan = () => {
-    // const {data, loading} = useSubscribersData();
+    const {data, loading} = useSubscribersData();
     // const {data: membershipData, loading: membershipLoading} = useGetMembership();
     const history = useRouter();
 
@@ -33,9 +33,9 @@ const UserPlan = () => {
                 </div>
             </div>
             <h4 className="text-sm">Total subscribers</h4>
-            <Slider aria-label="Player progress" hideThumb={true} defaultValue={1} className="max-w-md" />
+            <Slider aria-label="Player progress" hideThumb={true} defaultValue={data?.length} className="max-w-md" />
             <h6 className="text-sm">
-                {/* {loading ? "..." : data?.length} of{" "} */}
+                {loading ? "..." : data?.length} of{" 2500 "}
                 {/* {membershipData?.plan === "LAUNCH" ? "2500" : membershipData?.plan === "SCALE" ? "10,000" : "1,00,000"}{" "} */}
                 added
             </h6>

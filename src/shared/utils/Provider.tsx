@@ -37,7 +37,13 @@ export default function Providers({children}: ProviderProps) {
             ) : (
                 <>{children}</>
             )}
-            <Toaster position="top-center" reverseOrder={false} />
+            <Toaster
+                position="top-center"
+                reverseOrder={false}
+                toastOptions={{
+                    className: "text-center",
+                }}
+            />
         </NextUIProvider>
     );
 }

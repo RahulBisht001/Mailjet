@@ -126,8 +126,8 @@ export const sideBarItems: DashboardSideBarTypes[] = [
 		icon: ICONS.write,
 	},
 	{
-		title: "Grow",
-		url: "/dashboard/grow",
+		title: "inbox.ai",
+		url: "/dashboard/ai",
 		icon: ICONS.analytics,
 	},
 	{

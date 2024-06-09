@@ -13,12 +13,15 @@ const DashboardOverviewCard = () => {
     let previousLastMonthSubscribers =
         !loading && subscribersData?.last7Months[subscribersData?.last7Months?.length - 2];
 
+    console.log("previousLastMonthSubscribers", previousLastMonthSubscribers);
+    console.log("lastMonthSubscribers", lastMonthSubscribers);
+
     if (previousLastMonthSubscribers.count > 0) {
         comparePercentage =
             ((lastMonthSubscribers.count - previousLastMonthSubscribers.count) / previousLastMonthSubscribers.count) *
             100;
     } else {
-        comparePercentage = 100;
+        comparePercentage = lastMonthSubscribers.count * 100;
     }
 
     comparePercentage = parseFloat(comparePercentage.toFixed(2));
