@@ -51,13 +51,13 @@ const Write = () => {
 
     return (
         <>
-            <div className="w-full flex p-5 flex-wrap gap-6 relative">
+            <div className="w-full flex p-5 mx-5 flex-wrap gap-7 relative h-screen overflow-y-auto">
                 <div
-                    className="w-[200px] h-[200px] bg-slate-100 flex flex-col  items-center justify-center  rounded-lg border cursor-pointer"
+                    className="w-[250px] h-[300px]  flex flex-col  items-center justify-center  rounded-xl border border-blue-400 cursor-pointer"
                     onClick={() => setOpen(!open)}
                 >
-                    <span className="block text-center text-2xl mb-3">{ICONS.plus}</span>
-                    <h5 className="text-md">Create New</h5>
+                    <span className="block text-center text-2xl mb-3 text-blue-500">{ICONS.folder}</span>
+                    <h5 className="text-base text-blue-500">Create New Email</h5>
                 </div>
 
                 {/* Saved email drafts */}
@@ -69,15 +69,18 @@ const Write = () => {
                             <>
                                 <div
                                     key={index}
-                                    className="w-[200px] h-[200px] z-[0] relative bg-slate-100 flex flex-col items-center justify-center rounded-lg border cursor-pointer"
+                                    className="w-[250px] h-[300px] z-[0] relative bg-blue-100 bg-opacity-[0.4] flex flex-col items-center justify-center rounded-xl border border-blue-200 cursor-pointer"
                                 >
                                     <span
-                                        className="absolute block z-20 right-2 top-2 text-2xl cursor-pointer"
+                                        className="absolute block z-20 right-2 top-2 text-2xl cursor-pointer text-red-500"
                                         onClick={() => deleteHandler(email?._id)}
                                     >
                                         {ICONS.delete}
                                     </span>
-                                    <Link href={`/dashboard/new-email?subject=${formattedTitle}`} className="text-md">
+                                    <Link
+                                        href={`/dashboard/new-email?subject=${formattedTitle}`}
+                                        className="text-base text-slate-800"
+                                    >
                                         {email.title}
                                     </Link>
                                 </div>
@@ -94,7 +97,7 @@ const Write = () => {
                                         {ICONS.cross}
                                     </span>
                                 </div>
-                                <h5 className="text-md text-gray-700">Enter your email subject *</h5>
+                                <h5 className="text-base text-gray-700">Enter your email subject *</h5>
                                 <input
                                     type="text"
                                     name=""

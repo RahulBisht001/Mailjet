@@ -15,12 +15,13 @@ import {MdOutlineRemoveRedEye} from "react-icons/md";
 import {RxCross2} from "react-icons/rx";
 import {CgProfile} from "react-icons/cg";
 import {FiPlusCircle} from "react-icons/fi";
-import {MdDeleteOutline} from "react-icons/md";
 import {IoIosRepeat} from "react-icons/io";
 import {PiWaveform} from "react-icons/pi";
 import {IoMdArrowDown} from "react-icons/io";
 import {FaLinkedinIn} from "react-icons/fa6";
 import {FaTwitter} from "react-icons/fa";
+import {FaFolderOpen} from "react-icons/fa";
+import {ImBin2} from "react-icons/im";
 
 export const ICONS = {
     right: <IoMdCheckmark />,
@@ -42,8 +43,9 @@ export const ICONS = {
     cross: <RxCross2 />,
     profile: <CgProfile />,
     plus: <FiPlusCircle />,
-    delete: <MdDeleteOutline />,
+    delete: <ImBin2 />,
     regenerate: <IoIosRepeat />,
     linkedin: <FaLinkedinIn />,
     twitter: <FaTwitter />,
+    folder: <FaFolderOpen />,
 };
